@@ -1,0 +1,12 @@
+public class Maestro extends Persona{
+    private String numero;
+    private String servicioVenta;
+    private String contraseñaM;
+
+    public Maestro(int nombre, String apellido, String correo, String rut, String estrellitas, String comentarios, String numero, String servicioVenta, String contraseñaM) {
+        super(nombre, apellido, correo, rut, estrellitas, comentarios);
+        this.numero = numero;
+        this.servicioVenta = servicioVenta;
+        this.contraseñaM = contraseñaM;
+    }
+}
