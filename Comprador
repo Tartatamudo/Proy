@@ -1,0 +1,19 @@
+public class Comprador extends Persona{
+    private String serviciosPedidos;
+    private String contraseña;
+
+    public Comprador(int nombre, String apellido, String correo, String rut, String estrellitas, String comentarios, String serviciosPedidos, String contraseña) {
+        super(nombre, apellido, correo, rut, estrellitas, comentarios);
+        this.serviciosPedidos = serviciosPedidos;
+        this.contraseña = contraseña;
+    }
+
+    @Override
+    public String toString() {
+        return "Comprador{" +
+                "serviciosPedidos='" + serviciosPedidos + '\'' +
+                ", contraseña='" + contraseña + '\'' +
+                '}';
+    }
+
+}
