@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Comprador> Usuarios = new ArrayList<>();
+        String a = "A";
+        int b = 0;
+        for (int i = 0; i < 5; i++) {
+            b = (int)(Math.random()*9+1);
+            Comprador com = new Comprador(b,a,a,a,a,a,a,a);
+            Usuarios.add(com);
+        }
+
+        imprimmir(Usuarios);
+    }
+    public static void imprimmir(ArrayList<Comprador> Usuarios){
+        for (int i = 0; i < Usuarios.size(); i++) {
+            Usuarios.get(i).getNombre();
+        }
+    }
+}
